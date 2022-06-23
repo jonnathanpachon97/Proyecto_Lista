@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Yellowtail', cursive;
+    background-image: url(img/fondo10.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 100px 150px rgba(0, 0, 0, 0.7);
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 120px;
+    animation: azul-neon 2s infinite alternate;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 60px;
+}
+
+.letrero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 0;
+    font-size: 60px;
+    animation: amarillo-neon 4s infinite alternate;
+}
+
+.contenido {
+    width: 100%;
+    height: 70vh;
+    font-size: 40px;
+    color:white;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.item {
+    text-align: center;
+}
+
+@keyframes azul-neon {
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+        text-shadow: 9px 9px 30px blue,
+                     3px 3px 5px cyan,
+                    -3px -3px 5px cyan,
+                    -9px -9px 30px blue;
+    }
+
+    10%, 30%, 60%, 90% {
+
+        text-shadow: none;
+    }
+
+}
+
+@keyframes amarillo-neon {
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+        text-shadow:    9px 9px 30px green,
+                        3px 3px 5px orange,
+                        -3px -3px 5px yellow,
+                        -9px -9px 30px green;
+    }
+
+    10%, 30%, 60%, 90% {
+        text-shadow: none;
+    }
+
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.boton1 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 40px;
+    background-color: transparent;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 80px;
+    padding: 15px 35px;
+    text-decoration: none;
+    color:white;
+    transition: .4s ease;
+    cursor: pointer;
+    animation: pares-neon 2s infinite alternate;
+}
+
+.boton1:hover {
+    box-shadow: 0 0 10px blue,
+                0 0 30px cyan,
+                0 0 70px cyan,
+                0 0 130px blue;
+}
+
+@keyframes pares-neon {
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+        text-shadow: 9px 9px 30px blue,
+                     3px 3px 5px cyan,
+                    -3px -3px 5px cyan,
+                    -9px -9px 30px blue;
+    }
+
+    10%, 30%, 60%, 90% {
+
+        text-shadow: none;
+    }
+
+}
+
+.boton2 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 40px;
+    background-color: transparent;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 80px;
+    padding: 15px 35px;
+    text-decoration: none;
+    color:white;
+    transition: .4s ease;
+    cursor: pointer;
+    animation: impares-neon 5s infinite alternate;
+}
+
+@keyframes impares-neon {
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+        text-shadow:    9px 9px 30px green,
+                        3px 3px 5px greenyellow,
+                        -3px -3px 5px greenyellow,
+                        -9px -9px 30px green;
+    }
+
+    10%, 30%, 60%, 90% {
+        text-shadow: none;
+    }
+
+}
+
+.boton2:hover {
+    box-shadow: 0 0 10px green,
+                0 0 30px greenyellow,
+                0 0 70px greenyellow,
+                0 0 130px green;
+}
+
+.boton3 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 40px;
+    background-color: transparent;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 80px;
+    padding: 15px 35px;
+    text-decoration: none;
+    color:white;
+    transition: .4s ease;
+    animation: listacompleta-neon 0.5s infinite alternate;
+}
+
+@keyframes listacompleta-neon {
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+        text-shadow:    9px 9px 30px red,
+                        3px 3px 5px crimson,
+                        -3px -3px 5px crimson,
+                        -9px -9px 30px red;
+    }
+
+    10%, 30%, 60%, 90% {
+        text-shadow: none;
+    }
+
+}
+
+.boton3:hover {
+    box-shadow: 0 0 10px red,
+                0 0 30px crimson,
+                0 0 70px crimson,
+                0 0 130px red;
+}
+

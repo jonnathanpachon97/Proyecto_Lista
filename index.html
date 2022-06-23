@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Lista Ordenada</title>
+</head>
+<body>
+    <h1 class="titulo">lista de Frutas</h1>
+    <div class="imagen">
+        <img src="img/piña.png" width="300">
+    </div>
+    <div>
+        <h2 class="letrero">ABIERTO</h2>
+    </div>
+    <div class="boton">
+        <input class="boton1" type="button" onclick="efectoPares()" value="Pares">
+        &nbsp;&nbsp;&nbsp; 
+        <input class="boton3" type="button" onclick="efectoLista()" value="Lista Completa">
+        &nbsp;&nbsp;&nbsp; 
+        <input class="boton2" type="button" onclick="efectoImpares()" value="Impares">
+    </div>
+   
+    <header class="contenido">
+        <ol class="lista">
+            <li class="item">Guanabana</li>
+            <li class="item">Mango</li>
+            <li class="item">Fresa</li>
+            <li class="item">Mora</li>
+            <li class="item">Coco</li>
+            <li class="item">Banano</li>
+            <li class="item">Durazno</li>
+            <li class="item">Uva</li>
+            <li class="item">Piña</li>
+            <li class="item">Sandia</li>
+        </ol>
+    </header>
+    <script src="index.js"></script>
+</body>
+</html>
