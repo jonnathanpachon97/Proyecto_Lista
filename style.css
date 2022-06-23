@@ -198,3 +198,14 @@ body {
                 0 0 130px red;
 }
 
+.efecto-par{
+    animation: pares-neon 2s infinite alternate;
+}
+
+.efecto-impar{
+    animation: impares-neon 5s infinite alternate;
+}
+
+.efecto-completo{
+    animation: listacompleta-neon 0.5s infinite alternate;
+}
